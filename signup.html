@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up</title>
+  <link rel="stylesheet" href="./style.css">    
+  <link rel="icon" href="ii.png">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    .container {
+      max-width: 400px;
+      margin: 50px auto;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      background-color: #f9f9f9;
+    }
+    h2 {
+      text-align: center;
+    }
+    .form-group {
+      margin-bottom: 20px;
+    }
+    .form-group label {
+      display: block;
+      margin-bottom: 5px;
+    }
+    .form-group input {
+      width: 100%;
+      padding: 8px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    .btn {
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+      border: none;
+      border-radius: 5px;
+      background-color: #4caf50;
+      color: white;
+      cursor: pointer;
+    }
+    .btn:hover {
+      background-color: #45a049;
+    }
+    .error {
+      color: red;
+      margin-top: 5px;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <img src="img1.webp" alt="">
+    <ul id="b">
+        <li><a href="./jobs.html" ">jobs</a></li>
+        <li><a href="./companies.html" ">Companies</a></li>
+        <li><a href="./Blog.html">Blog</a></li>
+        <li><a href="./login.html" ">Login</a></li>
+        <li><a href="./signup.html" " id="reg">Register</a></li>
+        <li><a href="./index.html">Employers</a></li>
+    </ul>
+    <article>
+        <ul>
+            <li><a href="#one" ">Search</a></li>
+            <li><a href="#two"">Help</a></li>
+            <li><a href="#three"">Jobs</a></li>
+            <li><a href="#four"">Jobs in Japan</a></li>
+            <li><a href="#five"">New Job Updates</a></li>
+            <li><a href="#six"">Contact US</a></li>
+        </ul>
+    </article>
+</nav>
+<div class="container">
+  <h2>Sign Up</h2>
+  <form id="signupForm">
+    <div class="form-group">
+      <label for="name">Enter Name</label>
+      <input type="text" id="name" name="name" required>
+    </div>
+    <div class="form-group">
+      <label for="password">Set Password</label>
+      <input type="password" id="password" name="password" required>
+    </div>
+    <div class="form-group">
+      <label for="password2">Repeat Password</label>
+      <input type="password" id="password2" name="password2" required>
+      <div id="passwordError" class="error"></div>
+    </div>
+    <button type="submit" class="btn">Submit</button>
+  </form>
+  <p>Already have an account? <a href="./login.html" id="loginLink">Login</a></p>
+</div>
+
+<script>
+  document.getElementById('signupForm').addEventListener('submit', function(event) {
+    var password = document.getElementById('password').value;
+    var password2 = document.getElementById('password2').value;
+    var passwordError = document.getElementById('passwordError');
+
+    if (password !== password2) {
+      passwordError.textContent = 'Passwords do not match';
+      event.preventDefault();
+    } else {
+      passwordError.textContent = '';
+    }
+  });
+
+  
+</script>
+
+</body>
+</html>

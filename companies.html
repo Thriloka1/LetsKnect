@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Companies in Japan</title>
+  <link rel="stylesheet" href="./style.css">    
+  <link rel="icon" href="ii.png">
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 20px auto;
+      padding: 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      grid-gap: 20px;
+    }
+    .company {
+      background-color: #fff;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      overflow: hidden;
+    }
+    .company-logo {
+      width: 100%;
+      height: auto;
+    }
+    .company-details {
+      padding: 20px;
+    }
+    .company-details h2 {
+      margin-top: 0;
+    }
+    .company-details p {
+      margin: 10px 0;
+    }
+    .company-website a {
+      color: #007bff;
+      text-decoration: none;
+    }
+    a{
+        text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <img src="img1.webp" alt="">
+    <ul id="b">
+        <li><a href="./jobs.html" ">jobs</a></li>
+        <li><a href="./companies.html" ">Companies</a></li>
+        <li><a href="./Blog.html">Blog</a></li>
+        <li><a href="./login.html" ">Login</a></li>
+        <li><a href="./signup.html" " id="reg">Register</a></li>
+        <li><a href="./index.html">Employers</a></li>
+    </ul>
+    <article>
+        <ul>
+            <li><a href="#one" ">Search</a></li>
+            <li><a href="#two"">Help</a></li>
+            <li><a href="#three"">Jobs</a></li>
+            <li><a href="#four"">Jobs in Japan</a></li>
+            <li><a href="#five"">New Job Updates</a></li>
+            <li><a href="#six"">Contact US</a></li>
+        </ul>
+    </article>
+</nav>
+<div class="container">
+  <div class="company">
+    <img src="i1" alt="Company 1 Logo" class="company-logo">
+    <div class="company-details">
+      <h2>Company 1</h2>
+      <p>Industry: IT Services</p>
+      <p>Location: Tokyo</p>
+      <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+      <div class="company-website">
+        <a href="#" target="_parent">Visit Website</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="company">
+    <img src="i2.jpg" alt="Company 2 Logo" class="company-logo">
+    <div class="company-details">
+      <h2>Company 2</h2>
+      <p>Industry: Finance</p>
+      <p>Location: Osaka</p>
+      <p >Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+      <div class="company-website">
+        <a  href="#" target="_parent">Visit Website</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Add more companies here -->
+
+</div>
+
+<script>
+  // Add more companies here
+  var companies = [
+    {
+      name: "Company 3",
+      logo: "i3.jpg",
+      industry: "Manufacturing",
+      location: "Nagoya",
+      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit...",
+      website: "#"
+    },
+    {
+      name: "Company 4",
+      logo: "i4.png",
+      industry: "Healthcare",
+      location: "Kyoto",
+      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit...",
+      website: "#"
+    },
+    {
+      name: "Company 5",
+      logo: "i5.jpeg",
+      industry: "Education",
+      location: "Fukuoka",
+      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit...",
+      website: "#"
+    },
+    {
+      name: "Company 6",
+      logo: "i6.jpg",
+      industry: "Retail",
+      location: "Sapporo",
+      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit...",
+      website: "#"
+    },
+    {
+      name: "Company 7",
+      logo: "i7.jfif",
+      industry: "Hospitality",
+      location: "Kobe",
+      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit...",
+      website: "#"
+    },
+    {
+      name: "Company 8",
+      logo: "img2",
+      industry: "Automotive",
+      location: "Yokohama",
+      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit...",
+      website: "#"
+    },
+    {
+      name: "Company 9",
+      logo: "img14",
+      industry: "Construction",
+      location: "Hiroshima",
+      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit...",
+      website: "#"
+    },
+    
+  ];
+
+  var container = document.querySelector('.container');
+
+  companies.forEach(function(company) {
+    var companyElement = document.createElement('div');
+    companyElement.classList.add('company');
+    var logo = document.createElement('img');
+    logo.src = company.logo;
+    logo.alt = company.name + ' Logo';
+    logo.classList.add('company-logo');
+    var details = document.createElement('div');
+    details.classList.add('company-details');
+    var companyName = document.createElement('h2');
+    companyName.textContent = company.name;
+    var industry = document.createElement('p');
+    industry.textContent = 'Industry: ' + company.industry;
+    var location = document.createElement('p');
+    location.textContent = 'Location: ' + company.location;
+    var description = document.createElement('p');
+    description.textContent = 'Description: ' + company.description;
+    var website = document.createElement('div');
+    var link = document.createElement('a');
+    link.href = company.website;
+    link.textContent = 'Visit Website';
+    link.target = '_parent';
+    link.classList.add('company-website');
+    website.appendChild(link);
+    details.appendChild(companyName);
+    details.appendChild(industry);
+    details.appendChild(location);
+    details.appendChild(description);
+    details.appendChild(website);
+    companyElement.appendChild(logo);
+    companyElement.appendChild(details);
+    container.appendChild(companyElement);
+  });
+
+  
+</script>
+
+</body>
+</html>

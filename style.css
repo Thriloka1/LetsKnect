@@ -1,0 +1,558 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+nav #reg{
+    border-radius: 40%;
+    border: 2px solid blue;
+    text-decoration: none;
+}
+a{
+    text-decoration: none;
+}
+nav{
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    box-shadow: 1px 1px 1px #c2a6a6;
+    flex-direction: row;
+}
+nav article{
+    width: 50%;
+}
+nav article ul{
+    display: grid;
+    grid-template-columns: auto auto;
+    flex-direction: row;
+}
+nav,nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+nav img{
+    width: 100px;
+    height: 100%;
+    margin-left: 1%;
+}
+nav ul{
+    width: 100%;
+    list-style: none;
+}
+nav #b{
+    width: 100%;
+    height: 100%;
+}
+nav #b li a{
+    width: 100%;
+    padding: 10%;
+    color: blue;
+}
+
+header{
+    width: 100%;
+    height: 350px;
+    background-color: rgb(50, 32, 209);
+    position: relative;
+}
+
+header center{
+    padding: 4%;
+}
+header #hfirst{
+    width: 80%;
+    height: 20%;
+    background:linear-gradient(violet,aliceblue);
+    border-radius: 20px;
+    position: absolute;
+    left: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+#hfirst .sep{
+    width: 100%;
+}
+header label{
+    width: 100%;
+}
+header label{
+    width: 40%;
+    text-align: center;
+}
+header .in{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+header .in input{
+    width: 70%;
+    height: 100%;
+    border: none;
+    outline: none;
+}
+header input{
+    width: 33%;
+}
+header input::placeholder{
+    text-align: center;
+}
+#hfirst .sep+.sea{
+    width: 20%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: rgb(50, 32, 209);
+    border-radius: 10px;
+    margin-right: 10px;
+}
+.sea button{
+    width: 50%;
+    color: #fff;
+    background-color: rgb(50, 32, 209);
+}
+.sea i{
+    color: #fff;
+}
+header #hsecond{
+    width: 100%;
+    position: absolute;
+    top: 230px;
+}
+#hsecond ul{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    list-style: none;
+}
+#hsecond li{
+    width: 15%;
+    height: 100%;
+    background-color: #fff;
+    border-radius: 10%;
+    flex-direction: row;
+}
+#hsecond li i{
+    width: 100%;
+    height: 100%;
+    font-size: 100%;
+    color:rgb(47, 180, 197);
+    margin-bottom: 20%;
+}
+
+.job-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    justify-items: center;
+}
+
+.job-item {
+    background-color: #f9f9f9;
+    border-radius: 10%;
+    padding: 20px;
+    text-align: left;
+    box-shadow: 5px 5px 5px #c2a6a6;
+}
+
+#help{
+    width: 100%;
+    height: 600px;
+    background-color: #fff;
+    position: relative;
+}
+#help #in{
+    width: 100%;
+    position: absolute;
+    top: 20px;
+}
+#help #in h4{
+    margin-bottom: 2%;
+}
+
+#help ul{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    list-style: none;
+}
+#help ul li{
+    width:30%;
+    height: 55%;
+    box-shadow: 3px 3px 3px rgb(224, 224, 224);
+}
+#help ul li center{
+    width: 100%;
+}
+#help ul li h1{
+    font-size: 200%;
+    color: #2997ff;
+}
+#help ul li h1,h3{
+    margin-bottom: 10%;
+}
+
+#help button{
+    width: 10%;
+    height: 10%;
+    position: absolute;
+    top: 85%;
+    left: 45%;
+    border-radius: 10%;
+}
+#jobs{
+    width: 100%;
+    height: 750px;
+    position: relative;
+    background-color: #f7f7f7;
+    margin-top: 2%;
+}
+#jobs #f{
+    position: absolute;
+    top: 5%;
+    left: 43%;
+}
+#jobs ul{
+    position: absolute;
+    top: 10%;
+    width: 100%;
+    height: 90%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    list-style: none;
+}
+#jobs li {
+    width: 90%;
+    height: 80%;
+    background-color: #fff;
+    box-shadow: 3px 3px 3px gainsboro;
+}
+#jobs ul li center{
+    flex-direction: row;
+}
+#jobs li h3{
+    font-size: small;
+    margin-bottom: 0;
+}
+#jobs li h1{
+    font-size: large;
+}
+#jobs ul li h3,h1{
+    margin-bottom: 3%;
+}
+#jobs ul img{
+    width: 100px;
+    height: 100px;
+}
+#jobs button{
+    position: absolute;
+    top: 95%;
+    left: 45%;
+    font-size: medium;
+    border-radius: 20%;
+}
+
+#avail{
+    width: 100%;
+    height: 500px;
+    margin-top: 10%;
+    position: relative;
+}
+
+#avail ul{
+    width: 100%;
+    height: 50%;
+    display: grid;
+    position: absolute;
+    top: 25%;
+    align-items: center;
+    justify-content: space-evenly;
+    grid-template-columns: auto auto auto;
+    list-style: none;
+    box-shadow: 3px 3px 3px #c2a6a6;
+}
+#avail ul li{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+
+#new{
+    width: 100%;
+    height: 400px;
+}
+#new ul{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    list-style: none;
+}
+#new article{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#new article+button{
+    width: 10%;
+    height: 10%;
+    margin-top: 5%;
+    margin-left: 45%;
+    margin-bottom: 5%;
+    border-radius: 20%;
+    font-size: 100%;
+}
+
+.section{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f7f7f7;
+}
+.slide img{
+    width: 100px;
+    height: 100px;
+}
+.slider{
+    width: 100%;
+    height: 100%;
+    border-radius: 10%;
+    overflow: hidden;
+}
+.slide{
+    width: 300%;
+    height: 100%;
+    display: flex;
+}
+.slide input{
+    display: none;
+}
+.gal{
+    width: 20%;
+    transition: 1s;
+    margin-top: 1%;
+}
+.gal img{
+    width: 90%;
+    height: 100%;
+}
+.nav-m{
+    position: absolute;
+    margin-top: -5%;
+    margin-left: 30%;
+    justify-content: center;
+    display: flex;
+    width: 50%;
+}
+.m-btn{
+    border: 2px solid #23e3c2;
+    padding: 1%;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 1s;
+}
+.m-btn:not(:last-child)
+{
+    margin-right: 10px;
+}
+.m-btn:hover{
+    background-color: #23e3c2;
+}
+#radio1:checked~.first{
+    margin-left: 0;
+}
+#radio2:checked~.first{
+    margin-left: -10%;
+}
+#radio3:checked~.first{
+    margin-left: -20%;
+}
+#radio4:checked~.first{
+    margin-left: -30%;
+}
+#radio5:checked~.first{
+    margin-left: -40%;
+}
+#radio6:checked~.first{
+    margin-left: -50%;
+}
+#radio7:checked~.first{
+    margin-left: -60%;
+}
+#radio8:checked~.first{
+    margin-left: -70%;
+}
+#radio9:checked~.first{
+    margin-left: -80%;
+}
+.nav-auto{
+    width: 100%;
+    margin-top: 460px;
+    display: flex;
+    justify-content: center;
+}
+.nav-auto div{
+    border: 2px solid #23e3c2;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 2s;
+}
+.nav-auto div:not(:last-child)
+{
+    margin-right: 30px;
+    justify-content: center;
+}
+#radio1:checked~.nav-auto .a-b1{
+    background-color: #23e3c2;
+}
+#radio2:checked~.nav-auto .a-b2{
+    background-color: #23e3c2;
+}
+#radio3:checked~.nav-auto .a-b3{
+    background-color: #23e3c2;
+}
+#radio4:checked~.nav-auto .a-b4{
+    background-color: #23e3c2;
+}
+#radio5:checked~.nav-auto .a-b5{
+    background-color: #23e3c2;
+}
+#radio6:checked~.nav-auto .a-b6{
+    background-color: #23e3c2;
+}
+#radio7:checked~.nav-auto .a-b7{
+    background-color: #23e3c2;
+}
+#radio8:checked~.nav-auto .a-b8{
+    background-color: #23e3c2;
+}
+#radio9:checked~.nav-auto .a-b9{
+    background-color: #23e3c2;
+}
+
+footer{
+    width: 100%;
+    height: 100%;
+    margin-top: 5%;
+}
+footer h2{
+    width: 100%;
+    font-size: 100%;
+    color: orangered;
+}
+footer #art {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+footer ul {
+    width: 100%;
+    box-shadow: 5px 5px 5px #f7f7f7;
+    list-style: none;
+}
+footer article ul center{
+    width: 100%;
+    font-size: 80%;
+}
+@media (max-width:600px) and (min-width:200px){
+    nav{
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+    }
+    nav #b{
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+    }
+    nav #reg{
+        border: 0;
+        border-radius: 0;
+    }
+    article ul li a{
+        color: orangered;
+    }
+    header #hfirst{
+        flex-direction: column;
+    }
+    #hfirst .in{
+        width: 100%;
+        flex-direction: column;
+    }
+    #hsecond ul li i{
+        color: #30c52b;
+    }
+    #help h1,h3{
+        display: none;
+    }
+    #help button{
+        background-color: #97dbd0;
+    }
+    #jobs ul h3{
+        display: none;
+    }
+    #jobs ul img{
+        width: 100%;
+        height: 100%;
+    }
+    #jobs button{
+        background-color: rgb(137, 228, 228);
+    }
+    #avail ul li .vac{
+        display: none;
+    }
+    #avail ul li h4{
+        font-size: small;
+        background: radial-gradient(violet,gold);
+    }
+    #new ul li{
+        display: none;
+    }
+    slide img{
+        width: 100%;
+        height: 100%;
+    }
+    #new article+button{
+        width: 12%;
+        font-family: cursive;
+        background: conic-gradient(violet,indigo,blue,green,orange,yellow,red);
+        color: black;
+    }
+    footer section{
+        color: rgb(204, 99, 195);
+    }
+}
+footer ul li i{
+    padding: 1%;
+}
+footer section{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 3%;
+}

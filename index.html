@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Let'zKnect</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="ii.png">
+</head>
+<body>
+    <nav>
+        <img src="img1.webp" alt="">
+        <ul id="b">
+            <li><a href="./jobs.html" ">jobs</a></li>
+            <li><a href="./companies.html" ">Companies</a></li>
+            <li><a href="./Blog.html">Blog</a></li>
+            <li><a href="./login.html" ">Login</a></li>
+            <li><a href="./signup.html" " id="reg">Register</a></li>
+            <li><a href="#">Employers</a></li>
+        </ul>
+        <article>
+            <ul>
+                <li><a href="#one" ">Search</a></li>
+                <li><a href="#two"">Help</a></li>
+                <li><a href="#three"">Jobs</a></li>
+                <li><a href="#four"">Jobs in Japan</a></li>
+                <li><a href="#five"">New Job Updates</a></li>
+                <li><a href="#six"">Contact US</a></li>
+            </ul>
+        </article>
+    </nav> 
+    
+    <header id="one">
+        <article>
+            <center>Job Search Companies</center>
+        </article>
+        <article id="hfirst">
+            <div class="sep">
+                <div class="in" method="post">
+                    <label for="">Keywords|Location|JobType</label>
+                    <input type="text" placeholder="What are you Looking for?" name="Job Title" id="searchInput">
+                </div>
+            </div>
+            <div class="sea" class="search">
+                <button onclick="searchJobs()">Submit</button>
+            </div>
+        </article>
+        <article id="hsecond">
+            <ul>
+                <li>
+                    <center><i class="fa-regular fa-clock"></i><h5>Full Time</h5></center>
+                </li>
+                <li>
+                    <center><i class="fa-solid fa-clock-rotate-left"></i><h5>Part Time</h5></center></i>
+                </li>
+                <li>
+                    <center><i class="fa-solid fa-bookmark"></i><h5>Book Marked</h5></center>
+                </li>
+                <li>
+                    <center><i class="fa-brands fa-cc-visa"></i>
+                    <h5>Visa Offered</h5></center>
+                </li>
+                <li>
+                    <center><i class="fa-regular fa-message"></i>
+                    <h5>No Nihongo</h5></center>
+                </li>
+                <li>
+                    <center><i class="fa-solid fa-earth-americas"></i>
+                    <h5>Overseas OK</h5></center>
+                </li>
+            </ul>
+        </article>
+    </header>
+    
+
+    <div class="job-list">
+
+    </div>
+    <section id="help">
+        <center id="in">
+            <h4 id="two">Interview Help</h4>
+            <h1>Showcase your abilities and personality in 3 steps</h1>
+        </center>
+        <ul>
+            <li>
+                <center>
+                    <h1>01</h1>
+                    <h3>Sign Up for an Account</h3>
+                    <p><a href="./signup.html" ">Register</a> as a job seeker and post a resume
+                    (Already have an account, login here)
+                    </p>
+                </center>
+            </li>
+            <li>
+                <center>
+                    <h1>02</h1>
+                <h3>Visit our interview guide page
+                </h3>
+                <p>We want to make sure you are ready and know what to expect. Take a look at what questions will be asked on the <a href="First Round Video Interview - JobsinJapan.mp4" " method="post">video interview</a> page.</p>
+                </center>
+            </li>
+            <li>
+                <center>
+                    <h1>03</h1>
+                <h3>Get ready for your interview.</h3>
+                <p>Suit up! A video interview is an actual interview so look sharp.  Relax and enjoy the interview.</p>
+                </center>
+            </li>
+        </ul>
+        <button>Start Now</button>    
+    </section>
+
+    <section id="jobs">
+        <center id="f">
+            <h1 id="three">Featured Jobs</h1>
+        </center>
+        <ul>
+            <li>
+                <center>
+                    <img src="img2" alt="Gaba">
+                <h3>Contract</h3>
+                <h1>1-to-1 English Instructor – Akihabara (May start)</h1>
+                <h3>Gaba Corporation</h3>
+                </center>
+            </li>
+            <li>
+                <center>
+                    <img src="img2" alt="Gaba">
+                <h3>Contract</h3>
+                <h1>1-to-1 English Instructor – Kitasenju (May start)</h1>
+                <h3>Gaba Corporation</h3>
+                </center>
+            </li>
+            <li>
+                <center>
+                    <img src="img13" alt="" style="height: 67px;">
+                <h3>Contract</h3>
+                <h1>SevenSeas English Academy is seeking talented and motivated teachers to join our dynamic team.</h1>
+                <h3>Seven Seas</h3>
+                </center>
+            </li>
+            <li>
+                <center>
+                    <img src="img14" alt="" style="height: 74px;">
+                <h3>Part Time</h3>
+                <h1>Part Time Tutor-online (remote work)</h1>
+                <h3>H.M.Group Inc.</h3>
+                </center>
+            </li>
+            <li>
+                <center>
+                    <img src="img15" alt="" style="height: 74px;">
+                    <h3>Part Time</h3>
+                <h1>Part-time English teachers – Immediate start</h1>
+                <h3>Eikaiwa　AEC</h3>
+                </center>
+            </li>
+            <li>
+                <center>
+                    <img src="img16" alt="">
+                <h3>Full Time</h3>
+                <h1>Cybersecurity Software Developer</h1>
+                <h3>Japan Careers Program</h3>
+                </center>
+            </li>
+        </ul>
+        <button>See All Jobs</button>
+    </section>
+
+ 
+    <section id="avail" >
+        <center>
+            <h1 id="four">Jobs In Japan</h1>
+            <h3>See all currently available jobs by industry</h3>
+        </center>
+        <ul>
+            <li>
+                <h4>Education,Training</h4>
+                <h4 class="vac">90</h4>
+            </li>
+            <li>
+                <h4>I T,Telecommunications</h4>
+                <h4 class="vac">78</h4>
+            </li>
+            <li>
+                <h4>Automotive</h4>
+                <h4 class="vac">6</h4>
+            </li>
+            <li>
+                <h4>Admin, Accounting, HR</h4>
+                <h4 class="vac">1</h4>
+            </li>
+            <li>
+                <h4>Creative, Media,Journalism</h4>
+                <h4 class="vac">5</h4>
+            </li>
+            <li>
+                <h4>Domestic Work</h4>
+                <h4 class="vac">2</h4>
+            </li>
+            <li>
+                <h4>Electrical,Electronic</h4>
+                <h4 class="vac">8</h4>
+            </li>
+            <li>
+                <h4>Engineering, Construction</h4>
+                <h4 class="vac">19</h4>
+            </li>
+            <li>
+                <h4>Localization, Translation</h4>
+                <h4 class="vac">1</h4>    
+            </li>
+            <li>
+                <h4>Management, Operations</h4>
+                <h4 class="vac">3</h4>
+            </li>
+            <li>
+                <h4>Staffing, Recruitment</h4>    
+                <h4 class="vac">1</h4>
+            </li>
+            <li>
+                <h4>Tourism, Hospitality</h4>
+                <h4 class="vac">2</h4>
+            </li>
+            <li>
+                <h4>Scientific, Medical, Health</h4>
+                <h4 class="vac">4</h4>
+            </li>
+        </ul>
+    </section> 
+
+
+    <section id="new">
+        <center><h1 id="five">What's New At Jobs In Japan</h1></center>
+        <ul>
+            <li>Latest</li>
+            <li>How to Japan</li>
+            <li>Company Spotlight</li>
+            <li>Living in Japan</li>
+            <li>Starting a Language School</li>
+            <li>Working in Japan</li>
+            <li>Inside Japan Podcast</li>
+        </ul>
+        <article class="section">
+            <div class="slider">
+                <div class="slide">
+                        <input type="radio" name="radio-btn" id="radio1">
+                    <input type="radio" name="radio-btn" id="radio2">
+                    <input type="radio" name="radio-btn" id="radio3">
+                    <input type="radio" name="radio-btn" id="radio4">
+                    <input type="radio" name="radio-btn" id="radio5">
+                    <input type="radio" name="radio-btn" id="radio6">
+                    <input type="radio" name="radio-btn" id="radio7">
+                    <input type="radio" name="radio-btn" id="radio8">
+                    <input type="radio" name="radio-btn" id="radio9">
+                    
+                    <div class="gal first"><img src="i1" alt=""></div>
+                    <div class="gal"><img src="i2.jpg" alt=""></div>
+                    <div class="gal"><img src="i3.jpg" alt=""></div>
+                    <div class="gal"><img src="i4.png" alt=""></div>
+                    <div class="gal"><img src="i5.jpeg" alt=""></div>
+                    <div class="gal"><img src="i6.jpg" alt=""></div>
+                    <div class="gal"><img src="i7.jfif" alt=""></div>
+                    <div class="gal"><img src="i1" alt=""></div>
+                    <div class="gal"><img src="i2.jpg" alt=""></div>
+
+
+                    <div class="nav-auto">
+                        <div class="a-b1"></div>
+                        <div class="a-b2"></div>
+                        <div class="a-b3"></div>
+                        <div class="a-b4"></div>
+                        <div class="a-b5"></div>
+                        <div class="a-b6"></div>
+                        <div class="a-b7"></div>
+                        <div class="a-b8"></div>
+                        <div class="a-b9"></div>
+                    </div>
+                </div>
+                <div class="nav-m">
+                    <label for="radio1" class="m-btn"></label>
+                    <label for="radio1" class="m-btn"></label>
+                    <label for="radio1" class="m-btn"></label>
+                    <label for="radio1" class="m-btn"></label>
+                    <label for="radio1" class="m-btn"></label>
+                    <label for="radio1" class="m-btn"></label>
+                    <label for="radio1" class="m-btn"></label>
+                    <label for="radio1" class="m-btn"></label>
+                    <label for="radio1" class="m-btn"></label>
+                </div>
+            </div>
+        </article>
+        <button>More</button>
+    </section>
+
+    <footer>
+        <article id="art">
+            <ul>
+                <center>
+                 <h2 id="six">Jobs In Japan</h2>
+                 <li>About us</li>
+                 <li>Contact us</li>
+                 <li>FAQ</li>
+                 <li>Blog</li>
+                </center>
+             </ul>
+     
+             <ul>
+                 <center>
+                     <h2>
+                         For Employers
+                         </h2>
+                     <li>Register
+                         </li>
+                     <li>Employers</li>
+                     <li>
+                         Prices</li>
+                     <li>
+                         Users Guide</li>
+                     <li>
+                         採用企業様
+                     </li>
+                 </center>
+             </ul>
+             
+             <ul>
+                <center>
+                 <h2>
+                     Legal
+                    </h2>
+                 <li> 
+                     Terms of Use</li>
+                 <li>
+                     Privacy Policy</li>
+                 <li>
+                     Commercial Act</li>
+                </center>
+             </ul>
+     
+             <ul>
+                 <center>
+                     <h2>Contact Us
+                     </h2>
+                 <li>Tokyo Office
+                     </li>
+                 <li>C/O Global Village Media
+                     </li>
+                 <li>1-7-20-B2 Yaesu, Chuo-ku, Tokyo
+                     </li>
+                 <li>info@askmeforjobsinjapan.com
+                 </li>
+                 <li><i class="fa-brands fa-facebook"></i><i class="fa-brands fa-linkedin"></i></li>
+                 </center>
+             </ul>
+        </article>
+        <section>
+            <h4>2024 Owned and operated by Spectrum Consulting Japan G.K.</h4>
+            <h5><i class="fa-solid fa-globe"></i> 日本語</h5>
+        </section>
+    </footer> 
+    <script src="./script.js"></script>
+</body>
+</html>
